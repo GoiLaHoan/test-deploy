@@ -1,0 +1,62 @@
+.contributorsSidebar {
+  & h2 {
+    margin-top: 30px;
+    padding-bottom: 0.5em;
+    font-size: 1.25em;
+    font-family: "Mulish";
+    font-weight: 700;
+    color: #373737;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  & ul {
+    margin-top: 10px;
+
+    & li {
+      list-style-type: none;
+      border-bottom: thin solid #eaeaea;
+      padding: 10px 0;
+
+      &:last-child {
+        border: none;
+      }
+
+      & a {
+        font-family: "Mulish";
+        font-size: 15px;
+        text-decoration: none;
+        color: #003366;
+      }
+
+      & span {
+        float: right;
+      }
+    }
+  }
+
+  & .imgWrapperCircle {
+    display: inline-block;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border: thin solid #f4f4f4;
+    background: #f4f4f4;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  & .showMore {
+    color: #003871;
+    text-decoration: underline;
+    border: none;
+    outline: none !important;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

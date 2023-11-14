@@ -1,0 +1,30 @@
+
+// buy sell nav item
+.goldBanner {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #f0b310;
+  text-transform: uppercase;
+
+  & span {
+    text-transform: capitalize;
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 42px;
+    text-align: left;
+  }
+}
+
+.openCloseContainer {
+  display: none;
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

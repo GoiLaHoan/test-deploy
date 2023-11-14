@@ -1,0 +1,52 @@
+@use './../../styles/vars' as *;
+
+.wrapper {
+  width: 100%;
+}
+
+.title {
+  padding: 2px 0;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  background-color: #373737;
+}
+
+.contents {
+  border-top: 0;
+  padding: 0.8em;
+
+  & p {
+  }
+}
+
+.gridTwoColumn {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  column-gap: 10px;
+  margin-bottom: 0.5em;
+}
+
+.amOrPm {
+  width: 4em;
+  padding: 0.5em;
+  color: navy;
+  border: solid 1px $dark-grey;
+  text-align: center;
+}
+
+.price {
+  padding: 0.5em;
+  background-color: $light-grey;
+  text-align: right;
+}
+
+.historicalButtonContainer {
+  border-top: solid 1px $dark-grey;
+  padding-top: 0.5em;
+  text-align: center;
+
+  a {
+    font-weight: 600;
+  }
+}

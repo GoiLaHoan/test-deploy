@@ -1,0 +1,8 @@
+@use './../../styles/vars' as *;
+
+div.container {
+  @include contentWrapper;
+  display: flex;
+  align-items: center;
+  height: 96px;
+}

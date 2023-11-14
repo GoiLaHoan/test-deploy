@@ -1,0 +1,54 @@
+@import '../../styles/vars';
+
+.loading {
+  border-bottom: solid 1px $light-grey;
+  margin-bottom: 1em;
+  & p {
+    margin-bottom: 5px;
+    height: 17px;
+    width: 40%;
+    border-radius: 2px;
+    background-color: $light-grey;
+  }
+  & h3 {
+    margin-bottom: 5px;
+    height: 17px;
+    width: 80%;
+    border-radius: 2px;
+    background-color: $light-grey;
+  }
+  & p:nth-of-type(2) {
+    margin-bottom: 5px;
+    height: 15px;
+    width: 10%;
+    border-radius: 2px;
+    background-color: $light-grey;
+  }
+}
+
+// main
+.articleContainer {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: solid 1px $light-grey;
+
+  & p {
+    font-size: 1em;
+    color: #878787;
+  }
+
+  & h3 {
+    margin: 0.1em 0;
+    font-size: 1.1em;
+    color: #373737;
+  }
+
+  & h3:hover {
+    text-decoration: underline;
+  }
+
+  & span {
+    font-size: 0.8em;
+    color: #878787;
+  }
+}

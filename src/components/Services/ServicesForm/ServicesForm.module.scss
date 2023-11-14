@@ -1,0 +1,68 @@
+.formLabel {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.itemSelected {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.textConfirm {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.buttonSignUp {
+  background-color: #373737;
+  color: #FFFF;
+  border-radius: 5px;
+  padding: 7px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.stepConfirm {
+  span {
+    font-size: 12px;
+    margin: 9px 0;
+    display: inline-block;
+  }
+
+  .btnDiscard {
+    border: solid 1px #373738;
+    color: #373737;
+    border-radius: 5px;
+    line-height: 37px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .noneAuto {
+    display: flex;
+
+    .buttonSignUp {
+      width: 50% !important;
+    }
+
+    .stepConfirm {
+      display: flex;
+      width: 50%;
+
+      span {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+      }
+
+      .btnDiscard {
+        width: 100%;
+      }
+    }
+  }
+}

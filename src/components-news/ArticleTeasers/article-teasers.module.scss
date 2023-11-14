@@ -1,0 +1,125 @@
+.desc {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+}
+
+.titles {
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+  }
+
+  &:hover h1,
+  &:hover h2,
+  &:hover h3,
+  &:hover h4,
+  &:hover h5 {
+    text-decoration: underline;
+  }
+}
+
+.hover {
+  color: #373737;
+  transition: color 300ms ease;
+
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+  }
+
+  &:hover h1,
+  &:hover h2,
+  &:hover h3,
+  &:hover h4,
+  &:hover h5 {
+    text-decoration: underline;
+  }
+
+  & p,
+  time,
+  span,
+  a {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    color: #838383;
+  }
+
+  & time {
+    padding-top: 0.375em;
+  }
+}
+
+// ---------------------------
+// teaser five stuff
+// ---------------------------
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 1em;
+
+  & img {
+    width: 40%;
+    height: 120px;
+  }
+}
+// ---------------------------
+// end teaser five stuff
+// ---------------------------
+
+// ---------------------------
+// start teaser SIX FOR DARK BG stuff
+// ---------------------------
+.teaserSixForDarkBGHover {
+  color: #fff;
+  transition: opacity 300ms ease;
+
+  &:hover .teaserSixForDarkBGTitle {
+    opacity: 0.75;
+  }
+
+  & a {
+    color: cornflowerblue;
+  }
+}
+
+.teaserSixForDarkBGTitle {
+  font-size: 1.35em;
+  font-weight: 500;
+  transition: all 150ms ease;
+  margin: 0.25em 0;
+}
+
+// ---------------------------
+// end teaser SIX FOR DARK BG stuff
+// ---------------------------
+
+// mobile until i think of a better solution
+.titles {
+  color: black;
+
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+  }
+
+  &:hover h1,
+  &:hover h2,
+  &:hover h3,
+  &:hover h4,
+  &:hover h5 {
+    text-decoration: underline;
+  }
+}

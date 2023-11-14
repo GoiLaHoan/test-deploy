@@ -1,0 +1,44 @@
+.show {
+  padding-bottom: 10px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #9c9a94;
+}
+
+.tab {
+  display: flex;
+  font-size: 1.0825em;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border: 1px solid #dddddd;
+}
+
+.activeTab {
+  color: #094f8c;
+  font-weight: bold;
+  border-top: 3px solid #f0b310;
+}
+
+.limit {
+  cursor: pointer;
+  padding: 3px;
+}
+
+.activeLimit {
+  border-radius: 50%;
+  background-color: #f0b310;
+}
+
+.articleList {
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-right: .5em;
+  width: 22px;
+  height: 22px;
+}

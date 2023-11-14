@@ -1,0 +1,51 @@
+$grey: #e0e3eb;
+$light-grey: #f5f5f5;
+$dark-grey: #cccccc;
+$blue: #0a4e8d;
+$gold-yellow: #f9c432;
+$shadow: 0px 0px 4px rgba(20, 20, 20, 0.15);
+$NEXT_PUBLIC_CDN_PAGE: 'https://kitco-pages.nvhoan9116667.workers.dev';
+
+@mixin contentWrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+@mixin articleWidth {
+  width: 100%;
+  margin: 0 10px;
+}
+
+@mixin grid($template-columns) {
+  display: grid;
+  grid-template-columns: $template-columns;
+  column-gap: 20px;
+}
+
+@mixin layoutGridTwoColumn {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 40px;
+}
+
+@mixin columns($count) {
+  @include grid(repeat($count, 1fr));
+}
+
+@mixin loadingState {
+  border-radius: 2px;
+  background-color: $light-grey;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

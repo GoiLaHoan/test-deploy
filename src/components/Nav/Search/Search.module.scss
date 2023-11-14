@@ -1,0 +1,93 @@
+@use './../../../styles/vars' as *;
+
+.hidden {
+  visibility: opacity;
+  transition: all 0 ease !important;
+}
+
+.navItem {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.videoPageBG {
+  background-color: #294051;
+}
+
+.defaultBG {
+  background-color: #373737;
+}
+
+.searchMenuBg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 3px;
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1240px) {
+    left: 0;
+    height: 58px;
+    margin-top: 22px;
+    z-index: 900;
+    width: 100vw;
+    top: 20px;
+    background-color: #373737;
+  }
+}
+
+input.input {
+  height: 36px;
+  // width: 400px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  padding: 0 1em;
+
+  @media screen and (max-width: 768px) {
+    // width: 60%;
+  }
+}
+
+button.submitButton {
+  height: 36px;
+  padding: 0 20px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 4px;
+  font-size: 1em;
+  color: black;
+  background-color: $gold-yellow;
+  visibility: visible;
+  transition: all 0 ease !important;
+
+  &:active {
+    outline: 0;
+    border-color: transparent;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: transparent;
+  }
+}
+
+.closeIcon {
+  visibility: visible;
+  margin: 2px 0 0 8px;
+
+  @media screen and (max-width: 1240px) {
+    visibility: hidden;
+  }
+}
+
+.searchHoverPadding {
+  padding: 0 1em 0 3em;
+}

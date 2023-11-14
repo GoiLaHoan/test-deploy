@@ -1,0 +1,53 @@
+@import '../../styles/vars';
+
+.wrap {
+  position: relative;
+}
+
+.market {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.green {
+  color: #008000;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.table {
+  font-size: 0.75rem;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0.25em;
+  padding: 5px 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.odd {
+  background-color: $dark-grey;
+}
+
+.mid {
+  // text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}

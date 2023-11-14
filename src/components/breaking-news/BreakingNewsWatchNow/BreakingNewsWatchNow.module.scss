@@ -1,0 +1,36 @@
+.link {
+  width: 60%;
+  height: 105px;
+  margin: 0 auto 1em auto;
+  border: solid 1px #0c86d2;
+  background-color: #e5e5e5;
+
+  display: flex;
+}
+
+.imageContainer {
+  width: auto;
+  height: 100%;
+  min-width: 39%;
+}
+
+.image {
+  display: block;
+  max-width: 30%;
+  min-width: 30%;
+  height: 100%;
+}
+
+.st0 {
+  fill: #2486d2;
+}
+
+.st1 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #fff;
+}
+
+.st2 {
+  fill: #fff;
+}

@@ -1,0 +1,122 @@
+@mixin articleWrapper {
+  & p,
+  & ul li,
+  & ol li {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #111111;
+  }
+
+  & ul {
+    list-style-type: disc;
+    padding-inline-start: 18px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-left: 22px;
+  }
+
+  & ol {
+    list-style: auto;
+    padding-inline-start: 18px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  & h2 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    color: #111111;
+  }
+
+  & h3 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 31px;
+    color: #111111;
+  }
+
+  & h4 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.0075em;
+    color: #111111;
+  }
+
+  & h5,
+  & h6 {
+    font-family: 'Mulish';
+    font-style: normal;
+
+    color: #111111;
+  }
+
+  & strong {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111111;
+  }
+
+  & i {
+    font-family: 'Mulish';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111111;
+  }
+
+  & u {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #111111;
+  }
+
+  & blockquote {
+    font-family: 'Mulish';
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 0px 10px 30px;
+    gap: 10px;
+    border-left: 8px solid rgba(29, 97, 174, 0.1);
+    margin: 34px 0;
+
+    & p {
+      font-family: 'Mulish';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      letter-spacing: 0.005em;
+      color: #111111;
+    }
+  }
+
+  & table tbody tr {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  & p {
+    white-space: break-spaces;
+  }
+}

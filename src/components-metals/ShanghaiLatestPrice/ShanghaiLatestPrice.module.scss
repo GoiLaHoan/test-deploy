@@ -1,0 +1,22 @@
+@import '../../styles/vars';
+
+.latestPriceTitle {
+  padding-bottom: 10px;
+  border-bottom: solid 1px $dark-grey;
+}
+
+.historicalPriceTitle {
+  margin-top: 4em;
+  padding-bottom: 10px;
+  border-bottom: solid 1px $dark-grey;
+}
+
+.gridThreeColumn {
+  display: grid;
+  margin: 5px 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.listbox {
+  width: fit-content !important;
+}

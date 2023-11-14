@@ -1,0 +1,41 @@
+.tabsContainer {
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E2E1E1;
+  flex-wrap: wrap;
+}
+
+.tab {
+  color: #FFF;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  background-color: #0A4E8D;
+  padding: 3px 20px;
+  margin-right: 5px;
+  border-radius: 5px;
+  line-height: 30px;
+  cursor: pointer;
+
+  &:active {
+    border: 0;
+    outline: 0;
+    background-color: #373737;
+  }
+  
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+.active {
+  background-color: #373737;
+}
+
+@media (max-width: 767px) {
+    .tabsContainer {
+        button {
+            margin-bottom: 5px;
+        }
+    }
+}

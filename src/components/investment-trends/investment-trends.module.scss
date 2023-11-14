@@ -1,0 +1,79 @@
+.lineTitle {
+  width: 100%;
+  height: 3px;
+  background-color: #e2e1e1;
+  margin: 15px 0;
+}
+
+.ulWrap {
+  li {
+    margin-bottom: 13px;
+    padding-bottom: 13px;
+    &:not(:last-child) {
+      border-bottom: solid 1px #ccc;
+    }
+  }
+
+  .itemInvestmentTrend {
+    display: flex;
+    h5 {
+      font-family: Lato, sans-serif;
+      font-weight: 700;
+      color: #373737;
+    }
+  }
+}
+
+.investmentTrendMore {
+  color: #0a4e8d;
+}
+
+.sectionsWrap {
+  color: #373737;
+  display: block;
+  @media (max-width: 768px) {
+    background-color: #373737;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.itemLi {
+  @media (max-width: 768px) {
+    display: flex;
+    border-bottom: 1px solid #838383;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+.itemAnchor {
+  position: relative;
+  color: #373737;
+  font-size: 16px;
+  padding: 0.5em 0.5em;
+  @media (max-width: 768px) {
+    color: white;
+    width: 100%;
+    margin: 0 0.5em;
+  }
+}
+
+ul.subChildren {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    color: white;
+    width: 100%;
+    margin: 0 0.5em;
+  }
+
+  & li {
+    margin-bottom: 0.5em;
+  }
+}

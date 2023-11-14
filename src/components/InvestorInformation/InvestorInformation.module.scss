@@ -1,0 +1,29 @@
+.subTitle {
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 11px;
+  line-height: 14px;
+  border-bottom: 1px solid #ccc;
+}
+
+.leadGenItem {
+  padding: 3px 15px;
+  font-size: 14px;
+  line-height: 22px;
+  
+  &:nth-child(odd) {
+    background: #f8f8f8;
+  }
+  
+  &:nth-child(even) {
+    background: #e2e1e1;
+  }
+  
+  a {
+    color: #003871;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

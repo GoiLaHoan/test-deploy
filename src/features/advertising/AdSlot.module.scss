@@ -1,0 +1,155 @@
+// Handles displaying all ads are various viewports based on props.
+.placement {
+  display: none;
+
+  &.mobile {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    &.mobile {
+      display: none;
+    }
+
+    &.tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    &.tablet {
+      display: none;
+    }
+
+    &.desktop {
+      display: block;
+    }
+  }
+}
+
+// Leaderboard, all devices.
+.leaderboard {
+  height: 100px;
+  width: 320px;
+  margin: 28px auto;
+  background: #00badb;
+  text-align: center;
+  vertical-align: middle;
+
+  @media (min-width: 767px) {
+    height: 90px;
+    width: 768px;
+  }
+
+  @media (min-width: 1240px) {
+    height: 250px;
+    width: 970px;
+  }
+}
+
+// Small 200x200 square
+.square {
+  height: 200px;
+  width: 200px;
+  background: coral;
+  margin: 0 auto 28px auto;
+  text-align: center;
+}
+
+// 300x250
+.rectangle {
+  height: 250px;
+  width: 300px;
+  background: royalblue;
+  margin: 28px auto 28px auto;
+  text-align: center;
+}
+
+// Sticky 300x250 (or larger)
+.sticky-rectangle {
+  position: sticky;
+  top: 25px;
+  min-height: 250px;
+  width: 300px;
+  background: royalblue;
+  margin: 0 auto 28px auto;
+  text-align: center;
+}
+
+// Adjusts from 160x600 to 300x600
+.sticky-lg-rectangle {
+  display: block;
+  position: sticky;
+  top: 25px;
+  min-height: 600px;
+  width: 160px;
+  background: royalblue;
+  margin: 0 auto 28px auto;
+  text-align: center;
+
+  @media (min-width: 1536px) {
+    width: 300px;
+  }
+}
+
+// 300x250 on mobile, 728x90 on tablet.
+.banner {
+  width: 300px;
+  height: 250px;
+  background: blanchedalmond;
+  margin: 28px auto 28px auto;
+  text-align: center;
+
+  @media (min-width: 767px) {
+    width: 728px;
+    height: 90px;
+  }
+}
+
+.lg-square {
+  height: 280px;
+  width: 336px;
+  background: paleturquoise;
+  margin: 28px auto;
+  text-align: center;
+}
+
+// 160x600
+.skyscraper {
+  width: 160px;
+  min-height: 600px;
+  background: rebeccapurple;
+  margin: 0 auto 28px auto;
+  text-align: center;
+}
+
+// 160x600 but sticky
+.sticky-skyscraper {
+  position: sticky;
+  top: 25px;
+  width: 160px;
+  min-height: 600px;
+  background: rebeccapurple;
+  margin: 0 auto 28px auto;
+  text-align: center;
+  color: white;
+}
+
+// Footer leaderboard sizes
+.anchor {
+  width: 320px;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rebeccapurple;
+  color: white;
+  text-align: center;
+  z-index: 999999;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    height: 90px;
+  }
+}

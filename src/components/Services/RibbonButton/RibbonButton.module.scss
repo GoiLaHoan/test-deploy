@@ -1,0 +1,15 @@
+.buttonAction {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  border: solid 1px #d7d7d7;
+  background-color: #FFFF;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -13px;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.fontify {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+
+  h1 {
+    font-family: 'Bebas Neue';
+  }
+
+  & h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #373737;
+  }
+
+  & p,
+  time,
+  span,
+  a {
+    font-family: 'Mulish', sans-serif;
+  }
+
+  & time {
+    padding-top: 0.375em;
+  }
+
+  &a:hover h3 {
+    text-decoration: underline;
+  }
+}

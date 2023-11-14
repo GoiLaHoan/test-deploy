@@ -1,0 +1,42 @@
+@use './../../styles/vars' as *;
+
+.wrapper {
+  @include contentWrapper;
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: 900px 1fr;
+}
+
+.leftColumn {
+  padding: 0 20px;
+}
+
+.pricesContainer {
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  border-top: solid 1px $dark-grey;
+}
+
+.chartContainer {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.soonToBeVideoComponent {
+  width: 100%;
+  height: 400px;
+  background-color: pink;
+}
+
+.infoBlockContainer {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 40% 35% 1fr;
+  column-gap: 1em;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+}

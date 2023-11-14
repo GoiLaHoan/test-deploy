@@ -1,0 +1,17 @@
+@import '../../styles/vars';
+
+.titleContainer {
+  margin-left: 0;
+
+  h3 {
+    margin: 5px 0 10px 0;
+  }
+}
+
+.about {
+  margin: 10px 0;
+  max-width: 60ch;
+  font-size: 1.25em;
+  line-height: 1.6em;
+  // text-indent: 2em;
+}

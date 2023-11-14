@@ -1,0 +1,40 @@
+@use "./vars" as *;
+
+div.gridTwoColumn {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 2em;
+}
+
+.bodyContent {
+  margin: 0 auto;
+  margin-top: 2em;
+
+  & p {
+    position: relative;
+    width: 55ch;
+    margin: 0 auto 1em auto;
+    font-size: 1.5em;
+    line-height: 160%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  & img {
+    margin: 1em 0;
+    max-width: 100%;
+  }
+}
+
+.twitterBlock {
+  margin-top: 2em;
+  border: solid 1px $dark-grey;
+}
+
+.imageWrapper {
+  position: relative;
+  margin-top: 2em;
+  width: 100%;
+  height: 500px;
+}
+

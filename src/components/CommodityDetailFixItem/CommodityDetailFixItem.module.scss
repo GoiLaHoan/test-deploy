@@ -1,0 +1,29 @@
+.flagContainer {
+  position: relative;
+  width: 42px;
+  height: 42px;
+}
+
+.flag {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  background-image: url('../../public/flags/table-flags.png');
+  background-repeat: no-repeat;
+}
+
+.uk {
+  position: absolute;
+  top: 0;
+  width: 42px;
+  height: 42px;
+  background-position: -57px -5px;
+}
+
+.shang {
+  position: absolute;
+  top: 0;
+  width: 42px;
+  height: 42px;
+  background-position: -5px -5px;
+}

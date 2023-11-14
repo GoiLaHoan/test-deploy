@@ -1,0 +1,57 @@
+.sectionsWrap {
+  color: #373737;
+  display: block;
+
+  @media (max-width: 767px) {
+    background-color: white; // aka kitco black in tailwind config
+    color: white;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 8px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+}
+
+.itemLi {
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+.itemAnchor {
+  position: relative;
+  color: #373737;
+  font-size: 16px;
+  padding: 0.5em 1em;
+  font-weight: 500;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 5px 10px;
+
+    &:hover {
+      background-color: #E5E5E5;
+    }
+  }
+}
+
+ul.subChildren {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    width: 100%;
+    margin: 0 0.5em;
+  }
+
+  & li {
+    margin-bottom: 0.5em;
+  }
+}

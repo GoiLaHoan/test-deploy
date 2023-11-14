@@ -1,0 +1,71 @@
+@use './../../../styles/vars' as *;
+
+.wrapper {
+  display: none;
+
+  @media screen and (max-width: 896px) {
+    display: none;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    top: 100%;
+    z-index: 30;
+  }
+}
+
+.iconContainer {
+  display: none;
+
+  @media screen and (max-width: 896px) {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+}
+
+//
+ul.shareItemsContainer {
+  display: flex;
+  align-items: center;
+}
+
+li.shareItem {
+  height: 28px;
+  width: 28px;
+  margin-right: 0.75em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $light-grey;
+}
+
+// Loading
+.categoryLoading {
+  height: 21px;
+  width: 20%;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  background-color: $light-grey;
+}
+
+.titleLoading {
+  height: 45px;
+  width: 90%;
+  border-radius: 2px;
+  background-color: $light-grey;
+}
+
+.authorLoading {
+  height: 17px;
+  width: 60px;
+  border-radius: 2px;
+  background-color: $light-grey;
+}
+
+.dateLoading {
+  height: 16px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: $light-grey;
+}

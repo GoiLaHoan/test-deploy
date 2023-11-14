@@ -1,0 +1,59 @@
+.tabletGridOrder {
+  display: grid;
+  gap: 1.25em;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "qq"
+  "aa"
+  "bb"
+  "cc"
+  "dd"
+  "ee"
+  "ff"
+  "gg"
+  "hh"
+  "ii"
+  "kk"
+  "ll"
+  "mm"
+  "nn"
+  "oo"
+  "pp"
+  "rr"
+  "ss"
+  "tt"
+  "uu"
+  "vv"
+  "zz";
+
+  @media (min-width: 768px) {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-areas: 
+    //   "aa qq"
+    //   "bb qq"
+    //   "ii ii"
+    //   "cc gg"
+    //   "dd hh"
+    //   "ee ee"
+    //   "ll ll"
+    //   "mm mm"
+    //   "nn nn"
+    //   "oo oo"
+    //   "pp pp";
+		display: block;
+  }
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 200px 1fr 280px;
+  }
+}
+
+.miningBannerContainer {
+  display: none;
+
+  @media (min-width: 1240px) {
+    display: block;
+  }
+}

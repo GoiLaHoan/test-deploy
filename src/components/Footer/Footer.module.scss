@@ -1,0 +1,100 @@
+@use './../../styles/vars' as *;
+
+.defaultBG {
+  background-color: #232323;
+}
+
+.videoPageBG {
+  background-color: #0f181d;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 2.5rem;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  color: white;
+  border-top: solid 2px #e5b53a;
+}
+
+.logoSocial {
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media only screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.gridContent {
+  @include contentWrapper;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 40px;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+  }
+}
+
+.displayColumn {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+
+  a {
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    text-decoration: none;
+  }
+}
+
+.columnTitle {
+  font-weight: 600;
+  color: gray;
+  margin-top: 20px;
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.socialContainer {
+  display: flex;
+  margin-top: 30px;
+  @media only screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media only screen and (min-width: 1024px) {
+    margin-top: 30px;
+  }
+}
+
+.legalFlexWrapper {
+  @include contentWrapper;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+
+  a {
+    color: gray;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    padding: 0 3em;
+  }
+
+  @media only screen and (max-width: 896px) {
+    margin: 40px;
+    padding: 0;
+  }
+}

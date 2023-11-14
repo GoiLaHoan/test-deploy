@@ -1,0 +1,120 @@
+// titlebar
+.titlebarWrap {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  border: solid 1px #a6a6a6;
+  border-left: 0;
+  border-right: 0;
+}
+
+.iconContainer {
+  margin-top: 8px;
+  margin-right: 18px;
+}
+
+.pageTitle {
+  font-size: 30px;
+
+  & span.newSpan {
+    font-weight: 600;
+    color: red;
+    font-size: 14px;
+    vertical-align: text-top;
+  }
+}
+
+.socialsContainer {
+  justify-self: flex-end;
+  margin-left: auto;
+}
+// end titlebar
+
+// zone switcher
+.btnGrid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1em;
+}
+
+button.defs {
+  background: #373737;
+  font-size: 19px;
+  padding: 15px 0;
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 0;
+  outline: 0;
+  border: medium solid transparent;
+  &:active {
+    outline: 0;
+    border: medium solid #f0b310;
+  }
+  &:focus {
+    outline: 0;
+    border: medium solid #f0b310;
+  }
+}
+
+button.inactive {
+  color: white;
+}
+
+button.active {
+  background: transparent;
+  color: #373737;
+  border: medium solid #f0b310;
+}
+// end zone switcher
+
+// main price block
+// MainPriceBorder
+.mainPricesBorder {
+  border: solid 1px #c3c3c3;
+}
+
+// actual prices
+.priceBodyWrap {
+  margin: 35px 15px;
+}
+
+.priceGrid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.dateTitle {
+  color: #333432;
+  font-size: 19px;
+  background: #f2f2f2;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.item {
+  margin-top: 0;
+  text-align: center;
+  color: #333432;
+
+  & h4 {
+    text-transform: uppercase;
+    font-size: 19px;
+  }
+
+  & h2 {
+    font-size: 30px;
+  }
+}
+// end actual prices
+
+// control bar
+.controlWrap {
+  margin: 20px 20px 0 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px #a6a6a6;
+}
+// end control bar

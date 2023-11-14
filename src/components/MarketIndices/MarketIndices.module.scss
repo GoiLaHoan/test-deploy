@@ -1,0 +1,136 @@
+@use './../../styles/vars' as *;
+
+.wrapper {
+  width: 100%;
+}
+
+.title {
+  padding: 2px 0;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  background-color: #373737;
+}
+
+.contentsContainer {
+  position: relative;
+  padding: 10px;
+  background-color: $light-grey;
+}
+
+.inputContainer {
+  position: relative;
+  height: 24px;
+  display: grid;
+  grid-template-columns: 1fr 33%;
+  border: solid 1px $dark-grey;
+  border-radius: 2px;
+  background-color: white;
+  transition: all 200ms ease;
+
+  & input {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 2px;
+  }
+
+  & button {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: solid 1px darkcyan;
+    background-color: darkcyan;
+    color: white;
+    font-weight: 600;
+  }
+
+  &:focus-within {
+    border-color: darkcyan;
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.1);
+  }
+}
+
+.tabsGrid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 28% 41% 29%;
+  column-gap: 2px;
+}
+
+.tabButton {
+  border: solid 1px $dark-grey;
+  &:active {
+    border: 0;
+    outline: 0;
+  }
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+
+.tabButtonActive {
+  background-color: white;
+  border: solid 1px $dark-grey;
+  border-bottom: 0;
+
+  &:active {
+    border: 0;
+    outline: 0;
+    border: solid 1px $dark-grey;
+    border-bottom: 0;
+  }
+  &:focus {
+    border: 0;
+    outline: 0;
+    border: solid 1px $dark-grey;
+    border-bottom: 0;
+  }
+}
+
+.indexContainer {
+  padding: 10px 4px;
+  background-color: white;
+  border: solid 1px $dark-grey;
+  border-top: 0;
+
+  h5 {
+    display: flex;
+  }
+}
+
+// this color will be need to be dynamic red or green
+.currentChangeFlex {
+  display: flex;
+  justify-content: space-between;
+  color: red;
+}
+
+.footer {
+  background-color: $light-grey;
+}
+
+.updateButton {
+  margin: 10px 10%;
+  width: 80%;
+  padding: 0.2em 0;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: solid 1px darkcyan;
+  border-radius: 2px;
+  background-color: darkcyan;
+}
+
+.delayText {
+  font-size: 8px;
+  color: #373737;
+  text-align: center;
+  margin-top: 8px;
+}

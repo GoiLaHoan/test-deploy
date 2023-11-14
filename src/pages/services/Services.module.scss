@@ -1,0 +1,71 @@
+@media screen and (max-width: 1240px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+.subscriptions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // height: 30px;
+  background-color: #E5E5E5;
+  z-index: 20001;
+  // transform: translateY(165px);
+  transform: translateY(250px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s linear;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &.showLess {
+    transform: translateY(175px);
+    &.showLessConfirm {
+      transform: translateY(220px);
+      @media screen and (max-width: 1023px) {
+        transform: translateY(calc(100% - 40px));
+      }
+    }
+
+    @media screen and (max-width: 1023px) {
+      transform: translateY(calc(100% - 40px));
+    }
+  }
+
+  .form {
+    width: 1000px;
+    margin: 40px auto;
+    font-family: 'Mulish', sans-serif;
+    color: #373737;
+
+    input {
+      border-radius: 5px;
+      padding: 8px 10px;
+      flex-grow: 1;
+
+      &:hover, &:focus {
+        outline: none;
+      }
+    }
+
+    @media screen and (max-width: 1023px) {
+      margin: calc((100vh - 300px)/2) auto;
+      &.formConfirm {
+        margin: calc((100vh - 450px)/2) auto;
+      }
+      &.completeSub {
+        margin: 40px auto;
+      }
+    }
+
+    @media screen and (max-width: 1023px) {
+      width: 300px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.wrapper {
+  width: 1009px;
+  max-height: 637px;
+  margin: 2em auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contentContainer {
+  width: 503px;
+  padding: 4em 3em;
+  background-color: #f0b616;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputter {
+  width: 100%;
+  padding: 0.75em 1em;
+  margin-bottom: 1em;
+
+  border-radius: 0.25em;
+  border: solid 1px #373737;
+}
+
+.linklist {
+  display: flex;
+  width: 100%;
+  margin: 1em 0;
+
+  font-size: 0.75rem;
+
+  & li {
+    margin-right: 0.5em;
+    padding-right: 0.5em;
+
+    & a {
+      color: #373737;
+    }
+  }
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 0.75em 1em;
+  margin-top: auto;
+
+  color: white;
+  font-weight: 500;
+  font-size: 1.25em;
+
+  background-color: #0a4e8d;
+  border-radius: 0.25em;
+}

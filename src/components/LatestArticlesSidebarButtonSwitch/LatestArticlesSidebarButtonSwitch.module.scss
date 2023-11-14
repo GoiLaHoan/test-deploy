@@ -1,0 +1,48 @@
+@import '../../styles/vars';
+
+.buttonSwitchGrid {
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1em;
+  padding-bottom: 0.2em;
+  border-bottom: solid 1px $light-grey;
+
+  & button {
+    width: fit-content;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #373737;
+    opacity: 0.6;
+    background-color: transparent;
+    position: relative;
+    outline: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: -0.4em;
+      background-color: darkcyan;
+      opacity: 0;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+}
+
+.buttonActive {
+  opacity: 1 !important;
+
+  &:before {
+    opacity: 1 !important;
+  }
+}

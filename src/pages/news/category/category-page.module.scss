@@ -1,0 +1,22 @@
+.gridareas {
+  display: grid;
+  grid-template-areas:
+    'textOnly . b'
+    'a . b';
+}
+
+.txtBanner {
+  color: #ccc;
+  margin-bottom: 3px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.miningBanner {
+  height: 153px;
+  background: #fff;
+  position: relative;
+  border: 1px solid #000;
+  margin-top: -1px;
+  margin-left: -1px;
+}

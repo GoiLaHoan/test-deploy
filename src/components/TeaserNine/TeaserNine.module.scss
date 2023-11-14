@@ -1,0 +1,16 @@
+.hover {
+  color: #373737;
+  transition: opacity 300ms ease;
+
+  &:hover .title {
+    opacity: 0.75;
+  }
+}
+
+.title {
+  font-size: 1.825em;
+  font-weight: 500;
+  line-height: 1.2em;
+  transition: all 150ms ease;
+  margin: 0.25em 0;
+}
