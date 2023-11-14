@@ -1,0 +1,24 @@
+.listBoxer {
+  position: relative;
+  z-index: 100;
+
+  & span {
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 5px;
+    height: 2em;
+    border-color: #cccccc;
+    cursor: pointer;
+  }
+
+  & [data-reach-listbox-arrow] {
+    text-align: right;
+  }
+}
+
+.flag {
+  float: left;
+  margin: 3px 6px 3px 0;
+  width: 20px;
+}
+

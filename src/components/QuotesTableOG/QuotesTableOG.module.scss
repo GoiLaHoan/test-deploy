@@ -1,0 +1,101 @@
+@import '../../styles/vars';
+
+.wrapper {
+  padding: 1.5em;
+  width: 100%;
+  box-shadow: $shadow;
+  border-radius: 4px;
+}
+
+.heading {
+  margin-bottom: 1em;
+  font-size: 1.1em;
+
+  span {
+    margin-left: 1em;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #979797;
+  }
+}
+
+.name {
+  font-size: 0.8em;
+}
+
+.styleTable {
+  color: #373737;
+
+  a {
+    color: #003871;
+    text-decoration: underline;
+
+    &:hover {
+      color: #c06a24;
+    }
+  }
+  @media screen and (max-width: 40em) {
+    tbody tr {
+      border: 1px solid #f5f5f5 !important;
+    }
+  }
+}
+
+.styleThead {
+  tr {
+    margin-left: 0;
+    border-bottom: solid 1px #f5f5f5;
+    padding: 0.4em 0.6em;
+    th {
+      text-transform: uppercase;
+      color: #979797;
+      font-weight: 400;
+    }
+  }
+}
+
+.loading {
+  display: grid;
+  grid-template-columns: 30% repeat(5, 1fr);
+  column-gap: 0.5em;
+  color: #373737;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 30% repeat(5, 1fr);
+  }
+}
+
+.titles {
+  display: grid;
+  grid-template-columns: 30% repeat(5, 1fr);
+  column-gap: 0.5em;
+
+  p {
+    text-transform: uppercase;
+    color: #979797;
+  }
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 30% repeat(5, 1fr);
+  }
+}
+
+.colorRed {
+  color: red;
+}
+
+.colorGreen {
+  color: rgb(9, 194, 9);
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.textAlignLeft {
+  text-align: left;
+}
+
+.isOdd {
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,62 @@
+.visible {
+  height: auto;
+  width: 100%;
+  display: block;
+  visibility: visible;
+}
+
+.hidden {
+  height: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+.updaterContainer {
+  margin: 4em 1em 1em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.updateBtn {
+  color: #000;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  border: solid 1px #d9d9d9;
+  padding: 4px 6px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.midBtn {
+  margin: 0 0.5em;
+}
+
+.btnActive {
+  background-color: #f0b310;
+  border-color: #f0b310;
+  color: black;
+}
+
+.linkContainer {
+  margin: 1em;
+  display: flex;
+}
+
+.viewLink {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  background-color: #0a4e8d;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+.listbox {
+  width: fit-content !important;
+}

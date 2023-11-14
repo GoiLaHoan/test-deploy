@@ -1,0 +1,130 @@
+.wrapper {
+  display: block;
+  margin: 2em 0;
+}
+
+.title {
+  padding: 4px 0;
+  background-color: #373737;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border: solid 1px #cccccc;
+  border-top: 0;
+  padding: 10px 0;
+}
+
+.gridify {
+  display: grid;
+  grid-template-columns: 110px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+  // border-right: solid 1px #cccccc;
+
+  & p {
+    height: 52px;
+    border-right: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    margin-left: 1px;
+  }
+
+  & p:first-of-type {
+    border-left: solid 1px #cccccc;
+  }
+
+  & h4 {
+    font-size: 12px;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    // border-left: solid 1px #cccccc;
+    margin-left: 1px;
+  }
+
+  & h4:first-of-type {
+    display: flex;
+    justify-content: flex-start;
+    align-items: bottom;
+    border-left: solid 1px #cccccc;
+
+    & svg {
+      margin-top: 2px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.blank {
+  border-right: 0 !important;
+}
+.dates {
+  position: absolute;
+  transform: translateX(82px);
+}
+.datesTwo {
+  position: absolute;
+  transform: translateX(132px);
+}
+
+.forceText {
+	text-align: center;
+  transform: translateX(42px);
+}
+
+ul.listify {
+  & li:nth-last-of-type(2n) {
+    background-color: #f0f0f0;
+  }
+}
+
+.bold {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.changeRow {
+  display: flex;
+  width: 100%;
+}
+
+.dollarChange {
+  border-right: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  width: 50%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-weight: 600;
+}
+
+.percentChange {
+  border-right: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  width: 50%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-weight: 600;
+}

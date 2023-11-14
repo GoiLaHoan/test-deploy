@@ -1,0 +1,36 @@
+@import '../../styles/vars';
+
+.container {
+}
+
+.title {
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background-color: $blue;
+}
+
+.controls {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.controlGroup {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $dark-grey;
+  border-radius: 3px;
+}
+
+.valueInput {
+  margin-bottom: 10px;
+}
+
+.results {
+}

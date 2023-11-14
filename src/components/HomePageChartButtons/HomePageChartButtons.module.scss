@@ -1,0 +1,25 @@
+
+.updateBtn {
+  color: #000;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  border: solid 1px #d9d9d9;
+  padding: 4px 6px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.midBtn {
+  margin: 0 0.5em;
+}
+
+.btnActive {
+  background-color: #f0b310;
+  border-color: #f0b310;
+  color: black;
+}

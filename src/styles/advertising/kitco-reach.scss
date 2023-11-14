@@ -1,0 +1,652 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  overflow-x: hidden;
+}
+
+a[href^='tel'] {
+  color: #387fc1;
+}
+
+button:not(.card-btn):not(#mobile-menu-button),
+.button,
+a.button {
+  background: #387fc1;
+}
+
+.hero {
+  background: black url('../../../public/reach/images/global-sunlight-bg.jpg')
+    left no-repeat;
+}
+
+.navbar__brand img {
+  height: 60px;
+}
+
+@media (max-width: 992px) {
+  .navbar__brand img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 497px) {
+  .navbar__brand img {
+    height: 30px;
+  }
+}
+
+#about-kitco {
+  color: #01060a;
+}
+
+#about-kitco h2 {
+  margin-bottom: 60px;
+}
+
+#about-kitco h2 span {
+  font-size: 40px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#kitco-reach h3 {
+  background: #f0f0f0;
+  padding: 0 25px 0 15px;
+  margin-left: -15px;
+  width: -moz-fit-content;
+  color: #0a87d2;
+}
+
+#about-kitco ul {
+  width: 80%;
+  max-width: 480px;
+}
+
+#about-kitco .list-block {
+  margin-bottom: 40px;
+  margin-top: 90px;
+}
+
+#about-kitco .list-block h3 {
+  padding: 0 25px;
+  margin-left: -15px;
+  width: -moz-fit-content;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+#about-kitco .list-block ul {
+  margin-left: 25px;
+  font-size: 18px;
+}
+
+#about-kitco .note {
+  font-size: 0.85em;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 996px) {
+  #about-kitco .list-block {
+    margin: 30px auto 0 auto;
+    padding: 0 20%;
+  }
+
+  #about-kitco .col-lg-7 .list-block {
+    margin: 80px auto 40px auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #about-kitco .list-block {
+    padding: 0 5%;
+  }
+  #about-kitco .list-block h3 {
+    font-size: 28px;
+  }
+}
+
+/*********************************** About Us - Brand Power ********************/
+#about-kitco {
+  position: relative;
+  background: url('../../../public/reach/images/brand-power-bg.jpg');
+  background-size: cover;
+  color: #fff;
+}
+#about-kitco .container {
+  max-width: 1420px;
+}
+#about-kitco h2,
+#about-kitco h3,
+#about-kitco p {
+  color: #fff;
+  letter-spacing: unset;
+}
+#about-kitco h3 {
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 15px;
+}
+#about-kitco:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: auto;
+  background: #1f57aa;
+  height: 100%;
+  width: 100%;
+  opacity: 0.77;
+}
+#about-kitco .container {
+  position: relative;
+}
+.brand-power-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.brand-power-col {
+  margin-bottom: 70px;
+}
+.brand-power-icon {
+  margin-bottom: 20px;
+  min-height: 70px;
+}
+.brand-power-title {
+  font-family: 'Muli', sans-serif;
+  font-size: 25px;
+}
+.brand-power-title span {
+  font-size: 35px;
+  font-weight: 800;
+}
+.brand-power-conditions {
+  font-size: 16.5px;
+  margin-top: 10px;
+  font-family: 'Muli', sans-serif;
+}
+.brand-power-subtitle {
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+#about-kitco .section-heading {
+  margin-bottom: 12px;
+}
+#brand-power-stats {
+  background: transparent;
+  font-size: 25px;
+  color: #000;
+  line-height: 1.4em;
+  padding: 30px 5px 30px 5px;
+  margin-top: -20px;
+  position: relative;
+}
+#brand-power-stats h3,
+#brand-power-stats p {
+  color: #000;
+}
+#brand-power-stats-overflow {
+  width: 100vw;
+  clip-path: polygon(100px 0, 100% 0, 100% 100%, 0% 100%);
+  left: 50%;
+  right: 50%;
+  margin-left: -50%;
+  margin-right: -50vw;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  top: 0;
+}
+#brand-power-stats h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding-left: 60px;
+}
+.brand-power-stats-title {
+  line-height: 1.4em;
+}
+.brand-power-stats-title span {
+  font-size: 35px;
+  font-weight: 800;
+}
+.brand-power-stats-icon {
+  width: 95px;
+  height: 95px;
+  margin: 0 auto 15px auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .brand-power-icon img {
+    height: 70px;
+  }
+  .brand-power-conditions {
+    text-align: center;
+  }
+  #brand-power-stats {
+    color: #000;
+    margin-top: 40px;
+    padding: 60px 5px 55px 5px;
+  }
+  #brand-power-stats-overflow {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  #brand-power-stats h3 {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .brand-power-title,
+  .brand-power-stats-title {
+    font-size: 21px;
+  }
+  .brand-power-title span,
+  .brand-power-stats-title span {
+    font-size: 28px;
+  }
+  .brand-power-col {
+    width: 50%;
+    float: left;
+  }
+}
+
+.brand-power-stats-row {
+  margin-right: 0 !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .brand-power-col,
+  .brand-power-stats-col {
+    width: 100%;
+  }
+  .brand-power-stats-col:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .brand-power-title span {
+    line-height: 1;
+    font-size: 32px;
+  }
+  .brand-power-icon {
+    min-height: 90px;
+  }
+}
+
+/* Why Kitco Block */
+#why-kitco {
+  padding: 65px 0px;
+}
+
+#why-kitco:before {
+  background: #1d1d1d;
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: auto;
+  height: 100%;
+  width: 100%;
+  max-width: 44%;
+  -webkit-clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+  clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+}
+
+/*Kitco Media Block*/
+#kitco-media-block {
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  max-width: 1420px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#kitco-media-block h3 {
+  background: transparent;
+  color: #fff;
+  font-size: 3.3em;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#kitco-media-block h3 strong {
+  color: #0a87d2;
+}
+
+#kitco-media-block img {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  #why-kitco {
+    background: #1d1d1d;
+    padding: 30px 10px 20px 10px;
+  }
+  #about-kitco .container {
+    text-align: center;
+  }
+  #kitco-media-block {
+    font-size: 12px;
+  }
+  #about-kitco h3,
+  #kitco-reach h3 {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  #about-kitco ul,
+  #about-kitco .note {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  #kitco-media-block {
+    padding: 25px 0px 25px 0px;
+  }
+
+  #kitco-media-block h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .bg-img-block {
+    display: none;
+  }
+
+  .align-center-xs {
+    text-align: center;
+  }
+}
+
+#networks {
+  background: #0a87d2;
+  color: #fff;
+  padding: 60px 50px;
+}
+
+#networks h3 {
+  color: #fff;
+  border-left: 5px solid #1d1d1d;
+  padding-left: 15px;
+  margin: 0;
+  line-height: 1.1em;
+}
+
+#networks .col-12 {
+  align-self: center;
+}
+
+@media (max-width: 992px) {
+  #networks {
+    margin-top: 30px;
+    padding: 30px;
+  }
+}
+
+#advertise-with-kitco .arrow-down {
+  position: absolute;
+  bottom: -30px;
+  z-index: 10000;
+  left: 50%;
+  margin-left: -45px;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+#audience-profile {
+  background: #1d1d1d;
+}
+
+#audience-profile h2,
+#audience-profile h2 strong {
+  color: #0a87d2;
+}
+
+#age-gender-block .male {
+  background: #2058a5 url('../../../public/reach/images/icon-male.png')
+    no-repeat left bottom;
+}
+
+#age-gender-block .female {
+  background: #387fc1 url('../../../public/reach/images/icon-female.png')
+    no-repeat right bottom;
+}
+
+#audience-profile .overflowed-block {
+  background: #252525;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+#audience-profile h3 {
+  text-align: left;
+  font-size: 2em;
+}
+
+#age-gender-block .row {
+  margin-bottom: 30px;
+  font-size: 3.5em;
+  line-height: 1em;
+  color: #000;
+}
+
+#age-gender-block .col-6 {
+  padding: 20px 10px;
+  line-height: 0.5em;
+}
+
+#age-gender-block .sub-text {
+  font-size: 0.6em;
+}
+
+#portfolio-block h3 {
+  text-align: center;
+}
+
+#portfolio-block .col-5 {
+  text-align: right;
+}
+
+#portfolio-block .col-5,
+#portfolio-block .col-7 {
+  align-self: center;
+}
+
+#portfolio-block .emp {
+  font-size: 1.5em;
+}
+
+#decisions-makers,
+#investments-portfolio,
+#household-income {
+  border-bottom: 3px solid #fff;
+  padding: 25px 15px;
+}
+
+#household-income {
+  border: 0;
+}
+
+@media (min-width: 992px) {
+  #audience-profile .container > .row:first-child {
+    margin-bottom: 50px;
+  }
+
+  #audience-profile .overflowed-block {
+    margin-left: -15%;
+    padding-left: 25px;
+  }
+
+  #decisions-makers {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+    border: 0;
+  }
+
+  #investments-portfolio {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 39%;
+    flex: 0 0 39%;
+    max-width: 39%;
+    border: 0;
+    border-left: 3px solid #fff;
+  }
+
+  #household-income {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 31%;
+    flex: 0 0 31%;
+    max-width: 31%;
+    border-left: 3px solid #fff;
+  }
+}
+
+#audience-profile .overflowed-block img {
+  margin: 0 auto;
+}
+
+#audience-interest {
+  background: #0a87d2;
+}
+
+#audience-interest h4 {
+  display: none;
+}
+
+#travel-gov-electronics-block {
+  background: #2459a6;
+  padding: 50px 10px;
+  margin: 60px auto;
+}
+
+.dotted-line {
+  width: 3px;
+  height: 29px;
+  display: block;
+  margin: 5px auto;
+}
+
+@media (min-width: 480px) {
+  #audience-interest h4 {
+    display: block;
+    font-size: 0.95em;
+  }
+}
+
+@media (min-width: 992px) {
+  #audience-interest h4 {
+    font-size: 1.5em;
+  }
+}
+
+#kitco-reach .headline-block {
+  background: black
+    url('../../../public/reach/images/the-future-is-digital-bg.jpg') center
+    no-repeat;
+  height: 150px;
+  align-self: center;
+  padding-top: 50px;
+}
+
+#kitco-reach .headline-block h2 {
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.15em;
+  text-align: center;
+}
+
+#kitco-reach h2 {
+  margin-bottom: 20px;
+}
+
+#kitco-reach .content-block {
+  padding-top: 40px;
+}
+
+#kitco-reach h3 {
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+#kitco-reach .h3 {
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
+
+#kitco-reach p {
+  line-height: 1.1em;
+}
+
+#kitco-reach ul {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  #kitco-reach .headline-block {
+    background-size: 100% 100%;
+    height: 100%;
+    align-self: center;
+  }
+
+  #kitco-reach .headline-block h2 {
+    width: 370px;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -175px;
+  }
+
+  #kitco-reach .container > .row {
+    margin-bottom: 40px;
+  }
+
+  #kitco-reach .content-block {
+    padding-left: 40px;
+  }
+}
+
+#digital-goals {
+  background: black url('../../../public/reach/images/highway-bg.jpg') center
+    no-repeat;
+}
+
+#digital-goals img {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 992px) {
+  #digital-goals {
+    background-size: 100% 100%;
+  }
+
+  #digital-goals h2 {
+    margin-bottom: 0;
+    font-size: 3.5em;
+  }
+}
+
+#contact .theme-colored {
+  color: #0a87d2;
+}

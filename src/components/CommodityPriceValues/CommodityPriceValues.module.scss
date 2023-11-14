@@ -1,0 +1,108 @@
+@use './../../styles/vars' as *;
+
+.priceFlexSb {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+}
+
+.currencyChangeDate {
+  margin-top: 0.5em;
+  display: flex;
+}
+
+.currencyText {
+  margin: 0 0.5em;
+}
+
+.bidStyle {
+  font-weight: 600;
+  margin-left: 0;
+  font-size: 3.5em;
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 0.5em;
+  }
+}
+
+.askStyle {
+  font-weight: 600;
+  font-size: 1.5em;
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 0.5em;
+  }
+}
+
+ul.spotPriceGrid {
+  width: 50%;
+  & li {
+    padding: 0.5em 0;
+    display: grid;
+    grid-template-columns: 1fr 33% 15%;
+    column-gap: 2em;
+    border-bottom: solid 1px $dark-grey;
+    text-align: right;
+
+    & h4 {
+      text-transform: capitalize;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.mainUpOrDownSpan {
+  font-size: 1.2em;
+}
+
+.up {
+  color: rgba(9, 194, 9);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.down {
+  color: red;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.animatedUp {
+  animation: colorizeUp 1.8s linear;
+}
+
+.animatedDown {
+  animation: colorizeDown 1.8s linear;
+}
+
+@keyframes colorizeUp {
+  0% {
+    color: rgb(9, 194, 9);
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes colorizeDown {
+  0% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
+}

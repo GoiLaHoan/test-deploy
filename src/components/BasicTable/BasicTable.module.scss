@@ -1,0 +1,59 @@
+@import '../../styles/vars';
+.container {
+  font-weight: 500;
+}
+.header {
+  font-weight: bold;
+  background: $dark-grey;
+}
+
+.row {
+  display: grid;
+}
+
+.cell {
+  padding: 10px;
+}
+
+.odd {
+  background: $light-grey;
+}
+
+.containerTableTwo {
+  font-weight: 500;
+  .header {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: #ebebeb;
+  }
+
+  .row {
+    display: grid;
+    text-align: center;
+    font-size: 14px;
+
+    & .cell:first-child {
+      font-size: 14px;
+      background: #ebebeb;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .cell {
+    padding: 10px;
+  }
+
+  .odd {
+    background: #ebebeb;
+  }
+
+  .even {
+    background: #d7d7d7;
+  }
+
+  .colorRed {
+    color: #ff3333;
+  }
+}

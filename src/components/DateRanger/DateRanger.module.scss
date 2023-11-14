@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  input {
+    border: solid 1px #0a4e8d;
+    outline: 0;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 0.5em 0em;
+    text-align: center;
+    color: #232323;
+
+    &:placeholder {
+      color: #232323;
+      opacity: 1;
+    }
+
+    @media only screen and (max-width: 768px) {
+      padding: 0.1em 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 0.1em 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.iconContainer {
+  visibility: hidden;
+
+  @media only screen and (max-width: 768px) {
+    visibility: hidden;
+  }
+}

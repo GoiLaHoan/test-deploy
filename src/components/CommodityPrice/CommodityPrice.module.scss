@@ -1,0 +1,105 @@
+@use '../../styles/vars' as *;
+
+.currencyChangeDate {
+  display: inline-flex;
+}
+
+ul.spotPriceGrid {
+  & li {
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr 28% 24%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.up {
+  color: #009981;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.down {
+  color: #fc374a;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.priceName {
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #232323;
+}
+
+.convertPrice {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.animatedUp {
+  animation: colorizeUp 1.8s linear;
+}
+
+.animatedDown {
+  animation: colorizeDown 1.8s linear;
+}
+
+@keyframes colorizeUp {
+  0% {
+    color: rgb(9, 194, 9);
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes colorizeDown {
+  0% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.priceToday {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 0 8px 14px;
+  border-bottom-width: 1px;
+  border-color: black;
+
+  &::before {
+    content: '|';
+    color: black;
+    position: absolute;
+    top: 15px;
+    left: -1.3px;
+  }
+
+  &::after {
+    content: '|';
+    position: absolute;
+    color: black;
+    top: 15px;
+    right: -1.3px;
+  }
+}
+
+.listbox {
+  width: fit-content !important;
+  text-align: left !important;
+}

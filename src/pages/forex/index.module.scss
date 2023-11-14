@@ -1,0 +1,27 @@
+@import '../../../src/styles/vars';
+
+.container {
+  @include grid(1fr 300px);
+  margin-top: 20px;
+  padding: 20px;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.block {
+  margin-bottom: 20px;
+}
+
+.twoColumn {
+  @include columns(2);
+
+  @media screen and (max-width: 1000px) {
+    @include columns(1);
+  }
+}

@@ -1,0 +1,17 @@
+.wrapper {
+  font-family: 'Bebas Neue';
+
+  & a {
+    font-family: 'Bebas Neue';
+  }
+}
+
+// .mobileUl {
+//   & li {
+//     border-bottom: solid 1px pink;
+//   }
+//
+//   & li:last-child {
+//     border-bottom: none;
+//   }
+// }

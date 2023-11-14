@@ -1,0 +1,36 @@
+.link {
+  width: 66%;
+  height: 105px;
+  margin: 0 auto 1em auto;
+  border: solid 1px #fc8181;
+  border-color: rgba(252, 129, 129, 1);
+  background-color: black;
+
+  display: flex;
+}
+
+.svgContainer {
+  position: relative;
+  display: block;
+  width: 33%;
+  height: auto;
+  min-height: 100%;
+  margin-right: 20px;
+}
+
+.st0 {
+  fill: #da2816;
+}
+.st1 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #ffffff;
+}
+.st2 {
+  fill: #ffffff;
+}
+.st3 {
+  fill: none;
+  stroke: #da2816;
+  stroke-width: 10;
+}

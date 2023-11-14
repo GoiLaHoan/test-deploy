@@ -1,0 +1,34 @@
+.container {
+  display: block;
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+  }
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+.block {
+  margin-bottom: 35px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.referenceTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: 500;
+}
+
+.tableTitle {
+  text-align: center;
+  background: #0a4e8d; // ktc blue in vars
+  color: #fff !important;
+  font-weight: 400 !important;
+  font-size: 16px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}

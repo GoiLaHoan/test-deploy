@@ -1,0 +1,118 @@
+{
+  "data": {
+    "aggregation": {
+      "unit": "Day",
+      "size": 1
+    },
+    "maxDataPoints": 300
+  },
+  "display": {
+    "density": 92,
+    "chart": {
+      "backgroundColor": "#fff",
+      "previous": {
+        "color": "#000",
+        "dashStyle": "LongDashDot",
+        "forceVisible": true
+      },
+      "exportUrl": "/export/image",
+      "newPaneHeight": 1
+    },
+    "scrollbar": {
+      "barColor": "#808083",
+      "buttonColor": "#606063",
+      "trackColor": "#404043",
+      "visible": true
+    },
+    "scrollBehavior": "wheel",
+    "tooltip": {
+      "mode": "standard",
+      "visible": true,
+      "backgroundColor": "#000",
+      "showMainPlot": true
+    },
+    "xAxis": {
+      "visible": true,
+      "gridLines": {
+        "visible": false,
+        "color": "#f5f5f5"
+      },
+      "textColor": "#000",
+      "crosshair": {
+        "enabled": true,
+        "showValue": true,
+        "color": "#e0e0e0",
+        "dashStyle": "LongDashDot",
+        "snap": true,
+        "format": "{value:%m/%d/%Y}"
+      },
+      "minTickInterval": 0,
+      "equidistant": true,
+      "marginBars": 5
+    },
+    "yAxis": {
+      "visible": true,
+      "gridLines": {
+        "visible": true,
+        "color": "#f5f5f5"
+      },
+      "textColor": "#373737",
+      "showLastValue": "All",
+      "crosshair": {
+        "enabled": true,
+        "showValue": true,
+        "color": "#e0e0e0",
+        "dashStyle": "LongDashDot",
+        "snap": false
+      },
+      "preventLabelOverlap": false,
+      "maxPadding": 0.1,
+      "snapAnnotationsToPrices": true
+    },
+    "annotationTraits": {
+      "line": {
+        "width": 1,
+        "color": "#888",
+        "dashStyle": "Solid"
+      },
+      "fill": {
+        "color": "rgba(136,136,136,0.3)"
+      },
+      "zIndex": 8
+    }
+  },
+  "panes": [
+    {
+      "axes": [
+        {
+          "plots": [
+            {
+              "curves": [
+                {
+                  "attributes": ["ChangeBased"],
+                  "colors": ["#c6e2ff", "#1874cd", "#1664db", "#333", "#777"],
+                  "fields": ["Open", "High", "Low", "Close", "Change"],
+                  "style": "Area",
+                  "lineWidth": 1
+                }
+              ],
+              "main": true,
+              "symbol": "PLACEHOLDER",
+              "type": "Symbol",
+              "showPrevious": false,
+              "events": {
+                "earnings": {
+                  "show": true
+                }
+              }
+            }
+          ],
+          "comparison": "None",
+          "scale": "Linear"
+        }
+      ],
+      "height": 4
+    }
+  ],
+  "version": 21
+}

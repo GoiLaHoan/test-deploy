@@ -1,0 +1,16 @@
+
+// this is really only used for the video pages
+.donnieDarko {
+  & h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #fff;
+  }
+
+	& svg {
+		color: white
+	}
+}

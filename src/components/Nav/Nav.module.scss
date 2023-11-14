@@ -1,0 +1,80 @@
+@use './../../styles/vars' as *;
+
+.defaultBG {
+  background-color: #373737;
+}
+
+.videoPageBG {
+  background-color: #0f181d;
+}
+
+div:has(.radixList) {
+  // display: flex;
+  @media screen and (max-width: 1024px) {
+    order: 9999;
+    width: 100%;
+  }
+}
+div:has(.iconsParentDiv) {
+  // display: flex;
+  @media screen and (max-width: 1024px) {
+    flex-grow: 1;
+    z-index: 9999;
+  }
+}
+
+.logo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+
+  @media screen and (max-width: 1040px) {
+    position: absolute;
+    left: 0;
+    width: 400px;
+  }
+}
+
+.items {
+  display: flex;
+
+  @media screen and (max-width: 1040px) {
+    display: none;
+  }
+}
+
+.logoImgWrap {
+  margin: auto 0;
+}
+
+.logoImg {
+  height: 20px;
+}
+
+.hamburgerContainer {
+  display: none;
+  cursor: pointer;
+
+  @media screen and (max-width: 1040px) {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 294040;
+    padding: 0 0.5rem;
+  }
+}
+
+//icons
+ul.iconListFlex {
+  display: flex;
+  gap: 0.15rem;
+
+  @media screen and (max-width: 1040px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #373737;
+    justify-self: flex-end;
+    margin-left: auto;
+  }
+}

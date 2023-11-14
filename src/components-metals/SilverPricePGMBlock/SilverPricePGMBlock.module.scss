@@ -1,0 +1,50 @@
+@import '../../styles/vars';
+
+.header {
+  color: #fff;
+  background-color: #373737;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.link {
+  color: #003871;
+  text-decoration: underline;
+  margin: 5px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.green {
+  color: #008000;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.table {
+  font-size: 0.75rem;
+}
+
+.tableRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.odd {
+  background-color: $dark-grey;
+}
+
+.footer {
+  text-align: center;
+  padding: 7px;
+}

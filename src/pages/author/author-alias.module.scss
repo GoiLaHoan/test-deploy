@@ -1,0 +1,34 @@
+@use './../../styles/vars' as *;
+
+.gridTwoColumn {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 4em;
+  margin-top: 6em;
+}
+
+.pageTitle {
+  font-size: 1.5em;
+}
+
+.sectionTitle {
+  margin-top: 4em;
+  padding-bottom: 0.5em;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #373737;
+  text-transform: uppercase;
+  border-bottom: 1px solid $dark-grey;
+}
+
+.aboutText {
+  margin: 1em 0;
+  color: #777777;
+}
+
+.advertBlock {
+  margin: 2em 0;
+  height: 200px;
+  width: 100%;
+  background-color: $light-grey;
+}

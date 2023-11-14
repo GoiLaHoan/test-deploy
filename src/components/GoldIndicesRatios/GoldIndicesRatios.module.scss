@@ -1,0 +1,24 @@
+.wrapper {
+  margin: 2em 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.titles {
+  font-weight: 500;
+  color: #979797;
+  padding: 6px 4px;
+  border-bottom: solid 1px #ccc;
+}
+
+.values {
+  padding: 6px 4px;
+}
+
+.goldText {
+  font-weight: 500;
+}

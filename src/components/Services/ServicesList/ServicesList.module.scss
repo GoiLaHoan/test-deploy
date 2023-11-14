@@ -1,0 +1,113 @@
+.serviceItem {
+  border: solid 1px #D8D8D8;
+  border-radius: 10px;
+  position: relative;
+  font-family: 'Mulish', sans-serif;
+  
+.body {
+  padding: 15px;
+}
+
+.label {
+  display: inline-block;
+  background-color: #E5E5E5;
+  color: #333;
+  padding: 3px 0;
+  width: 105px;
+  text-align: center;
+  border-radius: 30px;
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+img { 
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 18px - 20px);
+  }
+}
+
+.contentText {
+  margin-top: 10px;
+  display: block;
+  @media screen and (max-width: 768px) {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    margin-top: 0;
+    transition: all .2s linear;
+
+    &.active {
+      height: unset;
+      overflow: unset;
+      visibility: visible;
+      margin-top: 10px;
+    }
+  }
+}
+
+h2 {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Mulish', sans-serif;
+  padding-bottom: 5px;
+}
+
+p {
+  color: #595959;
+  min-height: 70px;
+  font-size: 14px;
+  line-height: 125%;
+  margin-bottom: 15px;
+
+  a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 3px;
+  }
+}
+
+.serviceButton {
+  padding: 15px 0 17px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+  border: solid 1px transparent;
+  border-top-color: #E5E5E5;
+  &.active {
+    border-color: #707070;
+  }
+  &.selected {
+    background: #F7F7F7;
+    color: #B2B2B2;
+    cursor: not-allowed;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+    min-height: 90px;
+  }
+  .serviceButton {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    min-height: unset;
+  }
+}
+}

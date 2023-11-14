@@ -1,0 +1,14 @@
+@use './../../styles/vars' as *;
+
+ul.listContainer {
+  margin-left: 0;
+
+  & li {
+    margin: 2em 0;
+    & h2 {
+      color: dodgerblue;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+  }
+}

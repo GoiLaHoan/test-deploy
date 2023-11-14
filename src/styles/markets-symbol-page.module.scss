@@ -1,0 +1,15 @@
+@import './vars';
+
+.gridTwoColumn {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  column-gap: 40px;
+}
+
+.chartBlock {
+  margin: 4em 0;
+}
+
+.infoBlock {
+  margin: 2em 0;
+}

@@ -1,0 +1,45 @@
+@import '../../styles/vars';
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+  text-transform: capitalize;
+  border-bottom: solid 1px #cccccc;
+  margin-bottom: 1em;
+  @media screen and (max-width: 728px) {
+    display: block;
+  }
+}
+
+.bidStyle {
+  margin-left: 0;
+  font-size: 3.5em;
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 0.5em;
+  }
+}
+
+.currencyChangeDate {
+  margin-top: 0.5em;
+  display: flex;
+
+  span {
+    padding-left: 1em;
+    margin-left: 1em;
+    font-weight: 400;
+    border-left: solid 1px $dark-grey;
+  }
+}
+
+.up {
+  color: green;
+  display: flex;
+  align-items: center;
+}
+.down {
+  color: red;
+  display: flex;
+}

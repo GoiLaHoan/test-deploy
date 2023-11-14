@@ -1,0 +1,9 @@
+**/node_modules/*
+**/.next/*
+**/public/barchart.chart.js
+**/public/charting_library
+**/public/datafeeds
+**/components/TradingViewChart/TradingViewChart.tsx
+**/cells/FutureForexCell/**
+**/codegen/client.ts
+**/pages/terms-of-use.tsx

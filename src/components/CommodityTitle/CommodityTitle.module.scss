@@ -1,0 +1,16 @@
+@use '../../styles/vars' as *;
+
+.mainTitleFlexSb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+  text-transform: capitalize;
+  border-bottom: solid 1px $dark-grey;
+
+}
+
+.listbox {
+  margin-top: 4px;
+  width: fit-content !important;
+}

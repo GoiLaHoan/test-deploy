@@ -1,0 +1,7 @@
+@import '../../styles/vars';
+
+.wrapperBorder {
+  border: solid 1px $dark-grey;
+  border-top: 0;
+  padding: 1em;
+}

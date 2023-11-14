@@ -1,0 +1,31 @@
+overwrite: true
+# schema: "./schema.graphql"
+schema:
+  - 'http://kdb-gw.dev.kitco.com/graphql'
+
+documents:
+  - './src/**/*.ts'
+  - './src/**/*.tsx'
+generates:
+  ./src/generated/index.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      # - typed-document-node
+    config:
+      useTypeImports: true
+      exportFragmentSpreadSubTypes: true
+      dedupeFragments: true
+
+  # ./src/generated/tyyp.ts:
+  #   plugins:
+  #     - typescript
+  #
+  # ./src/:
+  #   preset: near-operation-file
+  #   presetConfig:
+  #     extension: .generated.ts
+  #     baseTypesPath: ~~/src/generated/tyyp
+  #   plugins:
+  #     - typescript-operations
+  #     - typed-document-node

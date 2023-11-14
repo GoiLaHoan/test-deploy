@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.block {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.converter {
+  margin-bottom: 40px;
+}
+
+.referenceTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.tableTitle {
+  text-align: center;
+  background: #0a4e8d; // ktc blue in vars
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+

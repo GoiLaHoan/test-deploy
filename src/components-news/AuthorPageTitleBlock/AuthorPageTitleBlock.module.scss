@@ -1,0 +1,127 @@
+@import '../../styles/vars';
+
+.authorType {
+  color: #575757;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: 'Mulish';
+}
+
+.name {
+  color: #373737;
+  font-size: 2.25em;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+}
+
+.title {
+  font: normal normal bold normal 17px normal sans-serif;
+  margin: 0 0 1.2em 0;
+  font-family: 'Mulish';
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bio {
+  margin-left: 0;
+  & p {
+    color: #777777;
+    font-size: 15px;
+    font-family: 'Mulish';
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 10px;
+  }
+}
+
+.imageContainer {
+  height: 240px;
+  width: 240px;
+  border-radius: 125px;
+  -webkit-border-radius: 125px;
+  overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    margin: auto;
+    height: 160px;
+    width: 160px;
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    margin: auto;
+  }
+}
+
+img.authorImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+}
+
+.authorContentFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.authorWrapper {
+  @media only screen and (max-width: 768px) {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+.socials {
+  margin-top: 1.5em;
+
+  @media only screen and (max-width: 768px) {
+    ul {
+      justify-content: center;
+    }
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    ul {
+      justify-content: center;
+    }
+  }
+}
+
+//loading
+.flexWrapper {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  column-gap: 2em;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.imageLoading {
+  @include loadingState;
+  height: 240px;
+  width: 240px;
+  border-radius: 6px;
+}
+
+.nameLoading {
+  @include loadingState;
+  height: 32px;
+  width: 100%;
+  margin: 1em 0 2em 0;
+}
+
+.bioLoading {
+  @include loadingState;
+  height: 17px;
+  width: 20%;
+}

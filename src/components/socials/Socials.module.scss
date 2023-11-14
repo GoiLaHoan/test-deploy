@@ -1,0 +1,17 @@
+@import '../../styles/vars';
+
+ul.shareItemsContainer {
+  display: flex;
+  align-items: center;
+}
+
+li.shareItem {
+  height: 28px;
+  width: 28px;
+  margin-right: 0.75em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $light-grey;
+}

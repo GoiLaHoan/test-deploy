@@ -1,0 +1,38 @@
+@import '../../../styles/vars';
+
+.container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  font-size: 0.75rem;
+}
+
+.odd {
+  background-color: $light-grey;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.title {
+  color: #000;
+  cursor: pointer;
+  font-size: 13px;
+  max-width: 50ch;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  &:hover {
+    color: #c06a24;
+  }
+}
+
+.source {
+  margin-right: 5px;
+  margin-left: 5px;
+}

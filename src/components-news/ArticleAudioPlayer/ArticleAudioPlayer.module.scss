@@ -1,0 +1,89 @@
+@import '../../styles/vars';
+
+.container {
+  position: relative;
+}
+
+// .containerNoPoster {
+// padding-bottom: 8.25%;
+// }
+
+.audioLabel {
+  width: 700px;
+  text-transform: uppercase;
+  margin: 5em auto 0;
+}
+
+.player {
+  position: relative;
+  height: 100%;
+  margin: 2em auto;
+  audio:focus {
+    outline: none;
+  }
+}
+
+.playerNoPoster {
+  height: 5em;
+  width: 100%;
+  background-color: transparent;
+  :global(.vjs-big-play-button) {
+    display: none;
+  }
+  :global(.vjs-control-bar) {
+    display: flex;
+    height: 8em;
+    border-radius: 8px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  :global(.vjs-button > .vjs-icon-placeholder:before) {
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+  }
+  :global(.vjs-time-control > .vjs-icon-placeholder:before) {
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+  }
+  :global(.vjs-time-control) {
+    font-size: 1.7em;
+    align-items: center;
+    display: flex;
+  }
+  :global(.vjs-volume-panel) {
+    align-items: center;
+  }
+
+  :global(.vjs-remaining-time-display) {
+    visibility: hidden;
+    width: 0;
+  }
+
+  :global(.vjs-fullscreen-control) {
+    visibility: hidden;
+    width: 0;
+  }
+}
+
+// :global(.vjs-big-play-button) {
+//   top: 50% !important;
+//   left: 50% !important;
+//   transform: translate(-50%, -50%) !important;
+// }
+
+// :global(.vjs-control):focus {
+//   outline: none;
+// }
+
+// :global(.vjs-poster) {
+//   background-size: cover !important;
+// }
+
+.loading {
+  position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}

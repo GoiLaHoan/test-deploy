@@ -1,0 +1,40 @@
+
+div.inputWrapper {
+	height: 48px;
+	width: 100%;
+	display: flex;
+	transition: all 180ms ease;
+
+	&:focus-within {
+		border-radius: .5em;
+		box-shadow: 1px 2px 12px rgba(30,30,30,.15);
+	}
+}
+
+input.searchBox {
+	flex-grow: 1;
+	padding: 1em;
+
+	font-size: 1.25em;
+
+	border: solid 1px #e7e7e7;
+	border-right: 0;
+	border-top-left-radius: .5em;
+	border-bottom-left-radius: .5em;
+
+	&:focus {
+		outline: 0;
+	}
+	&:active {
+		outline: 0;
+	}
+}
+
+.submitSearchButton {
+	flex-grow: 1;
+	max-width: 20%;
+	padding: auto 2em;
+	font-size: 1.25em;
+	background-color: #f0b616;
+	border-radius: 0 .5em .5em 0;
+}

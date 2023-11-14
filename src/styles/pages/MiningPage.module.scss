@@ -1,0 +1,81 @@
+@import '../../../../src/styles/vars';
+
+.gridTwoColumn {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 4em;
+  margin-top: 6em;
+}
+
+.pageTitle {
+  font-size: 1.5em;
+}
+
+.sectionTitle {
+  padding-bottom: 0.5em;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #373737;
+  text-transform: uppercase;
+  border-bottom: 1px solid $dark-grey;
+}
+
+.aboutText {
+  margin: 1em 0;
+  color: #777777;
+}
+
+.advertBlock {
+  margin: 2em 0;
+  height: 200px;
+  width: 100%;
+  background-color: $light-grey;
+}
+
+// new styles
+.miningTitle {
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 100%;
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+  border-bottom: solid 1px #999999;
+}
+
+.topArticlesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2em;
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.topArticlesContainer {
+  position: relative;
+}
+
+.textContainer {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  padding: 1em 0.75em;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  h2 {
+    font-weight: 500;
+    font-size: 1.15em;
+    color: white;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.placeholderAdBlock {
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5;
+  text-align: center;
+}

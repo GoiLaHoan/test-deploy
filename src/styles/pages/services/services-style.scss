@@ -1,0 +1,101 @@
+.navbar-brand .logo,
+.navbar-brand .logo-alt {
+  width: 320px;
+}
+
+.arrow-1 {
+  font-size: 100px;
+  color: #fff;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.arrow-1--content {
+  text-align: center;
+}
+
+.markets-inner .row {
+  margin-bottom: 20px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container .img-container--text-wrapper {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.img-container .img-container--text-wrapper > p {
+  text-align: center;
+  position: relative;
+  top: 5px;
+}
+
+.nav > li > a > img {
+  margin-top: -5px;
+}
+
+.fa.fa-angle-up {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  font-size: 100px;
+  margin-top: -60px;
+  text-align: center;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+#signupnow {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.fa.fa-angle-up:hover,
+.fa.fa-angle-down:hover {
+  cursor: pointer;
+}
+
+.anim--scroll {
+  animation: scrollDown 0.8s ease-in-out infinite alternate forwards;
+}
+
+@media (min-width: 768px) {
+  .arrow-1 {
+    position: relative;
+    top: 240px;
+  }
+}
+
+@media (min-width: 992px) {
+  .arrow-1 {
+    position: relative;
+    top: 250px;
+  }
+}

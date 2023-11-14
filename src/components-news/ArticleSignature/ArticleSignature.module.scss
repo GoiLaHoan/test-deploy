@@ -1,0 +1,26 @@
+@import '../../styles/vars';
+
+.bio {
+  margin: 4em auto;
+  max-width: 75ch;
+  color: #777777;
+
+  & p {
+    font-size: 1.2em;
+    line-height: 140%;
+    margin: 0.5em 0;
+  }
+}
+
+div.linksBar {
+  display: flex;
+  align-items: center;
+  margin: 0.5em auto;
+  max-width: 75ch;
+}
+
+.userName {
+  margin-top: 1px;
+  padding-right: 1em;
+  font-style: normal;
+}

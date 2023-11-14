@@ -1,0 +1,14 @@
+.note {
+  font-size: 14px;
+
+  @media screen and (max-width: 1023px) {
+    position: absolute;
+    width: 300px;
+    bottom: 35px;
+  }
+
+  a {
+    color: #373737;
+    font-weight: 700;
+  }
+}

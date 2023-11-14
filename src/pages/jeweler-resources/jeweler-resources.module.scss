@@ -1,0 +1,49 @@
+.container {
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+
+  & a {
+    text-decoration: underline;
+    color: #003871;
+
+    &:hover {
+      color: #c06a24;
+      text-decoration: none;
+    }
+  }
+}
+
+.advDesktop {
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.advMobile {
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+}
+
+.iframe {
+  width: 1024px;
+  min-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  height: 1310px;
+}
+
+.download {
+  @media screen and (max-width: 1000px) {
+    width: 100% !important;
+  }
+}
+
+.phone {
+  display: block;
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}

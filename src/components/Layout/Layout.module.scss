@@ -1,0 +1,11 @@
+@use './../../styles/vars' as *;
+.mainAppWrapper {
+  @include contentWrapper;
+}
+
+div.logoContainer {
+  @include contentWrapper;
+  display: flex;
+  align-items: center;
+  height: 96px;
+}

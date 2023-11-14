@@ -1,0 +1,100 @@
+.WordSection1 {
+    margin-right: 160.55pt;
+    margin-left: 160.55pt;
+	  padding: 0 20px;
+}
+.MsoNormal {
+  mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:106%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+}
+.MsoListParagraph {
+    mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+}
+.ml20 {
+    margin-left: 20pt;
+}
+.ml38 {
+    margin-left: 38pt;
+}
+.ml45 {
+    margin-left: 45pt;
+}
+.ml65 {
+    margin-left: 65pt;
+}
+.textIndent {
+    text-indent: -20pt;
+}
+
+@media (max-width: 1440px) {
+    .WordSection1 {
+        margin-right: 160.55pt;
+        margin-left: 160.55pt;
+    }
+}
+@media (max-width: 1200px) {
+    .WordSection1 {
+        margin-right: 100.55pt;
+        margin-left: 100.55pt;
+    }
+}
+@media (max-width: 992px) {
+    .WordSection1 {
+        margin-right: 50.55pt;
+        margin-left: 50.55pt;
+    }
+}
+@media (max-width: 768px) {
+    .WordSection1 {
+        margin-right: 25.55pt;
+        margin-left: 25.55pt;
+    }
+}
+@media (max-width: 575px) {
+    .WordSection1 {
+        margin-right: 1pt;
+        margin-left: 1pt;
+    }
+    .textIndent {
+        text-indent: -10pt;
+    }
+    .ml20 {
+        margin-left: 7pt;
+    }
+    .ml38 {
+        margin-left: 10pt;
+    }
+    .ml45 {
+        margin-left: 15pt;
+    }
+    .ml65 {
+        margin-left: 35pt;
+    }
+}

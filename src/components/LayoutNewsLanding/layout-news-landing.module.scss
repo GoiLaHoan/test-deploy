@@ -1,0 +1,68 @@
+.fontify {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+
+  h1 {
+    font-family: 'Bebas Neue';
+  }
+
+  & h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #373737;
+  }
+
+  & p,
+  time,
+  span,
+  a {
+    font-family: 'Mulish', sans-serif;
+  }
+
+  & time {
+    padding-top: 0.375em;
+  }
+
+  &a:hover h3 {
+    text-decoration: underline;
+  }
+}
+
+// TODO: FIX
+// .hover {
+//   color: #373737;
+//   transition: color 300ms ease;
+//
+//   & h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5 {
+//     font-family: 'Nunito Sans', sans-serif;
+//     font-weight: 700;
+//   }
+//
+//   &:hover h1,
+//   &:hover h2,
+//   &:hover h3,
+//   &:hover h4,
+//   &:hover h5 {
+//     text-decoration: underline;
+//   }
+//
+//   & p,
+//   time,
+//   span,
+//   a {
+//     font-family: 'Mulish', sans-serif;
+//     font-weight: 300;
+//     color: #838383;
+//   }
+//
+//   & time {
+//     padding-top: 0.375em;
+//   }
+// }

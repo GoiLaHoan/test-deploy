@@ -1,0 +1,37 @@
+@import '../../styles/vars';
+
+.container {
+  @include columns(3);
+  row-gap: 20px;
+
+  @media screen and (max-width: 1000px) {
+    @include columns(2);
+  }
+
+  @media screen and (max-width: 600px) {
+    @include columns(1);
+  }
+}
+
+.containerTwo {
+  text-align: center;
+  border: 1px solid $grey;
+  padding: 20px;
+}
+
+.country {
+  margin-bottom: 20px;
+}
+
+.listItem {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.link {
+  font-weight: bold;
+  text-decoration: underline;
+}

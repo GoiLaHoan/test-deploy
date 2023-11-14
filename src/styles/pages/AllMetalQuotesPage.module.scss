@@ -1,0 +1,53 @@
+@use "./../vars" as *;
+
+.gridThreeColumn {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 200px 1fr 280px;
+  column-gap: 20px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0 1em;
+  }
+}
+
+.dividerDark {
+  height: 2px;
+  width: 100%;
+  margin: 2em 0;
+  background-color: #373737;
+}
+
+.gridTwoColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3em;
+  position: relative;
+  max-width: 100%;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.leftColumn {
+  position: relative;
+  max-width: 100%;
+
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 20px;
+  }
+}
+
+.gridTwoColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+}
+
+// mobile one column
+.mobileOneColumn {
+  display: block;
+  margin: 0 10px;
+}
